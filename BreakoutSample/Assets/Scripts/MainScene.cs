@@ -50,10 +50,13 @@ public class MainScene : MonoBehaviour
         {
             this.ball.transform.position = new Vector3(this.racket.transform.position.x, 0, this.racket.transform.position.z + 0.25f);
 
+            // 開始前に Surfave Dial がクリックされたらボールに力を与えて動かし始める
             if (Input.GetButtonDown("Submit") || this.InputManager.IsButtonClicked)
             {
                 this.ball.SendMessage("AddFource");
                 this.isPlaying = true;
+
+                // クリックフラグは降ろしておく
                 this.InputManager.IsButtonClicked = false;
             }
         }
