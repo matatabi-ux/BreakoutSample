@@ -1,0 +1,4 @@
+Assembly-CSharp.dll
+UnityEngine.UI.dll
+BreakoutSample.UwpPlugin.dll
+UnityEngine.Networking.dll
